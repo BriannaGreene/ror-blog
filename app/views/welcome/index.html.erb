@@ -1,2 +1,23 @@
-<h1>Hello, World!</h1>
-<%= link_to 'My Blog', controller: 'articles' %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <%= stylesheet_link_tag "/assets/stylesheets/application.css.sass" %>
+    <%= javascript_include_tag "/assets/javascripts/application.js" %>
+  </head>
+  <body>
+
+    <ul class="nav navbar-inverse">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">My Snazzy Blog on Rails</a>
+      </li>
+    </ul>
+
+    <div class="container">
+      <h1>Hello, World!</h1>
+      <%= link_to 'My Blog', controller: 'articles' %>
+    </div>
+
+  </body>
+</html>
